@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/* These are just the general site styles. 
+   It has nothing to do with ImageFlow
+========================================== */
+@media screen, projection, print {
+    * { 
+		font-family:verdana, arial, helvetica, sans-serif;
+		font-size:100.01%;
+	}
+	html {
+		height:100%;
+		width:100%;
+	}
+	body {
+		color:#fff;
+		background-color:#000;
+		font-size:0.8em;
+		line-height:1.4em;
+		padding:1em 0;
+		margin:0;
+	}
+	a {
+		color:#fff;
+	}
+	h1 {
+		font-size:2.2em;
+		text-align:center;
+		margin:0.4em 0 1.3em 0;
+	}
+	
+  .image-block { width:78px; margin:0px 10px; float:left; }
+   .reflection { position:relative; }
+    .reflection img {
+        -webkit-transform: scaleY(-1);
+           -moz-transform: scaleY(-1);
+            -ms-transform: scaleY(-1);
+             -o-transform: scaleY(-1);
+                transform: scaleY(-1);
+        filter: flipv; opacity:0.20;
+        filter: alpha(opacity='20');
+    }
+    .overlay { position:absolute; top:0px; left:0px; width:78px; height:120px;
+        background-image: -moz-linear-gradient( center bottom, rgb(255,255,255) 60%, rgba(255,255,255,0) 75%);
+        background-image:   -o-linear-gradient( rgba(255,255,255,0) 25%, rgb(255,255,255) 40%);
+        background-image:     -webkit-gradient( linear, left bottom, left top, color-stop(0.60, rgb(255,255,255)), color-stop(0.75, rgba(255,255,255,0)));
+        filter: progid:DXImageTransform.Microsoft.Gradient( gradientType=0, startColor=0, EndColorStr=#ffffff);
+    }
+	
+}
