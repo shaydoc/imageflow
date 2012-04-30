@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8" />
+		<title>ImageFlow</title>
+		<meta name="robots" content="index, follow, noarchive" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<!-- This includes the ImageFlow CSS and JavaScript -->
+		<link rel="stylesheet" href="css/imageflow.packed.css" type="text/css" />
+                <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+    	        <script type="text/javascript" src="imageflow.js"></script>
+                <script type="text/javascript" src="js/amplify.min.js"></script>
+                <script type="text/javascript" src="js/knockout-2.0.0.js"></script>
+                <script type="text/javascript" src="js/knockout.mapping-min.js"></script>
+                <script type="text/javascript" src="js/behaviour.js"></script>
+	</head>
+	<body>	
+		<!-- This is all the XHTML ImageFlow needs -->
+		<div id="myImageFlow" class="imageflow" data-bind='foreach: items'>
+                    <img data-bind='attr: { src: media.m }'   /> 
+		</div>
+	</body>
+</html>
